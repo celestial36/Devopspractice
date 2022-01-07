@@ -1,0 +1,552 @@
+parvathi98@LAPTOP-GIMPBL0O:~$ pwd          (Present working directory)
+/home/parvathi98
+parvathi98@LAPTOP-GIMPBL0O:~$ ls              (listing out files and folders)
+ABCImpex       Thoughts     favfoods.sh       initialgalaxy       myfilewithvar.sh        paru_playbook     tempy
+AbcImpex       abcIMpex     fibonacci.sh      input.sh            myfilewithvariables.sh  parurole          tempy.txt
+Alex           abcImpex     file              mango.sh            myfilewithvars.sh       prime.sh          thoughts.txt
+Amy            abcimpex     fileVariable.sh   metafirms           myinfo.txt              reading.sh        world
+Dany           allperms     filevariables.sh  multicontnet.txt    newcreate               sayhi             world.sh
+Employee.yml   args.sh      frndsinarray.sh   multiplesof5.sh     odd_or_even.sh          scriptfilevar.sh  xyz
+Hashmum        bashaliases  func_demo.sh      mycommands.sh       oddnumber.sh            shellscripting    zing
+InitialGalaxy  bootcamp     hi                mycontnet.txt       oddnumbers.sh           smil.yml
+Play.yml       dore         hiscript.sh       myfileswithvar.sh   parentfldr1             sum.sh
+Sam            example.sh   ifelse.sh         myfileswithvari.sh  paru_orchestrate.yml    temp
+parvathi98@LAPTOP-GIMPBL0O:~$ mkdir loon     (making directory)
+parvathi98@LAPTOP-GIMPBL0O:~$ cd loon           (Changing to that directory)
+parvathi98@LAPTOP-GIMPBL0O:~/loon$ cd ..
+parvathi98@LAPTOP-GIMPBL0O:~$ cd ../..             (moving back to the root directory)
+parvathi98@LAPTOP-GIMPBL0O:/$ cd
+parvathi98@LAPTOP-GIMPBL0O:~$ mkdir -p parentfolder/childfolder         (creating parent and child folders)
+parvathi98@LAPTOP-GIMPBL0O:~$ cd parentfolder
+parvathi98@LAPTOP-GIMPBL0O:~/parentfolder$ ls
+childfolder
+parvathi98@LAPTOP-GIMPBL0O:~/parentfolder$ cd
+parvathi98@LAPTOP-GIMPBL0O:~$ pwd
+/home/parvathi98
+parvathi98@LAPTOP-GIMPBL0O:~$ mkdir > file.txt
+mkdir: missing operand
+Try 'mkdir --help' for more information.
+parvathi98@LAPTOP-GIMPBL0O:~$ ls > file.txt           (capturing output of a command to a file)
+parvathi98@LAPTOP-GIMPBL0O:~$ cat file.txt            (Displaying the file contents)  
+ABCImpex
+AbcImpex
+Alex
+Amy
+Dany
+Employee.yml
+Hashmum
+InitialGalaxy
+Play.yml
+Sam
+parvathi98@LAPTOP-GIMPBL0O:~$ cd loon
+parvathi98@LAPTOP-GIMPBL0O:~/loon$ touch clear.txt      (creating a file using touch command)
+parvathi98@LAPTOP-GIMPBL0O:~/loon$ ls > file.txt
+parvathi98@LAPTOP-GIMPBL0O:~/loon$ cat file.txt
+clear.txt
+file.txt
+parvathi98@LAPTOP-GIMPBL0O:~/loon$ echo "We are learning some of the important linux commands" > text.txt
+parvathi98@LAPTOP-GIMPBL0O:~/loon$ cat text.txt
+We are learning some of the important linux commands
+parvathi98@LAPTOP-GIMPBL0O:~/loon$ cat .txt*
+cat: '.txt*': No such file or directory
+parvathi98@LAPTOP-GIMPBL0O:~/loon$ echo "It's so interesting" > mytext.txt
+parvathi98@LAPTOP-GIMPBL0O:~/loon$ cat text.txt mytext.txt
+We are learning some of the important linux commands
+It's so interesting
+parvathi98@LAPTOP-GIMPBL0O:~/loon$ cat text* > mix.txt
+parvathi98@LAPTOP-GIMPBL0O:~/loon$ cat mix.txt
+We are learning some of the important linux commands
+parvathi98@LAPTOP-GIMPBL0O:~/loon$ echo "After those lines about linex we are appening this line to it using echo " " >> filename" >> mix.txt
+parvathi98@LAPTOP-GIMPBL0O:~/loon$ cat mix.txt
+We are learning some of the important linux commands
+After those lines about linex we are appening this line to it using echo   >> filename
+
+parvathi98@LAPTOP-GIMPBL0O:~/loon$ echo "After those lines about linex we are appening this line to it using echo " " >> filename" >> mix.txt
+parvathi98@LAPTOP-GIMPBL0O:~/loon$ echo "After those lines about linex we are appening this line to it using echo " " >> filename" >> mix.txt
+parvathi98@LAPTOP-GIMPBL0O:~/loon$ echo "After those lines about linex we are appening this line to it using echo " " >> filename" >> mix.txt
+parvathi98@LAPTOP-GIMPBL0O:~/loon$ echo "After those lines about linex we are appening this line to it using echo " " >> filename" >> mix.txt
+parvathi98@LAPTOP-GIMPBL0O:~/loon$ echo "After those lines about linex we are appening this line to it using echo " " >> filename" >> mix.txt
+parvathi98@LAPTOP-GIMPBL0O:~/loon$ less mix.txt                  (navigating through a page using less command)
+parvathi98@LAPTOP-GIMPBL0O:~/loon$ ls
+clear.txt  file.txt  mix.txt  mytext.txt  text.txt
+parvathi98@LAPTOP-GIMPBL0O:~/loon$ mkdir sony
+parvathi98@LAPTOP-GIMPBL0O:~/loon$ cd sony
+parvathi98@LAPTOP-GIMPBL0O:~/loon/sony$ touch hashmum.txt
+parvathi98@LAPTOP-GIMPBL0O:~/loon/sony$ ls
+hashmum.txt
+parvathi98@LAPTOP-GIMPBL0O:~/loon/sony$ cd ..
+parvathi98@LAPTOP-GIMPBL0O:~/loon$ pwd
+/home/parvathi98/loon
+parvathi98@LAPTOP-GIMPBL0O:~/loon$ cd sony
+parvathi98@LAPTOP-GIMPBL0O:~/loon/sony$ mv hashmum.txt loon
+parvathi98@LAPTOP-GIMPBL0O:~/loon/sony$ ls
+loon
+ mv loon hashmum.txt
+parvathi98@LAPTOP-GIMPBL0O:~/loon/sony$ ls
+hashmum.txt
+parvathi98@LAPTOP-GIMPBL0O:~/loon/sony$ ls
+hashmum.txt
+parvathi98@LAPTOP-GIMPBL0O:~/loon/sony$ cd ..
+parvathi98@LAPTOP-GIMPBL0O:~/loon$ cd ..
+parvathi98@LAPTOP-GIMPBL0O:~$ ls
+ABCImpex       Thoughts     favfoods.sh       ifelse.sh         myfileswithvar.sh       parentfldr1           smil.yml
+AbcImpex       abcIMpex     fibonacci.sh      initialgalaxy     myfileswithvari.sh      parentfolder          sum.sh
+Alex           abcImpex     file              input.sh          myfilewithvar.sh        paru_orchestrate.yml  temp
+Amy            abcimpex     file.txt          loon              myfilewithvariables.sh  paru_playbook         tempy
+Dany           allperms     fileVariable.sh   mango.sh          myfilewithvars.sh       parurole              tempy.txt
+Employee.yml   args.sh      filevariables.sh  metafirms         myinfo.txt              prime.sh              thoughts.txt
+Hashmum        bashaliases  frndsinarray.sh   multicontnet.txt  newcreate               reading.sh            world
+InitialGalaxy  bootcamp     func_demo.sh      multiplesof5.sh   odd_or_even.sh          sayhi                 world.sh
+Play.yml       dore         hi                mycommands.sh     oddnumber.sh            scriptfilevar.sh      xyz
+Sam            example.sh   hiscript.sh       mycontnet.txt     oddnumbers.sh           shellscripting        zing
+
+parvathi98@LAPTOP-GIMPBL0O:~$ cd loon
+parvathi98@LAPTOP-GIMPBL0O:~/loon$ cd sony
+parvathi98@LAPTOP-GIMPBL0O:~/loon/sony$ ls
+hashmum.txt
+parvathi98@LAPTOP-GIMPBL0O:~/loon/sony$ mv hashmum.txt loon ..
+mv: cannot stat 'loon': No such file or directory
+parvathi98@LAPTOP-GIMPBL0O:~/loon/sony$ cd ../..
+parvathi98@LAPTOP-GIMPBL0O:~$ whoami
+parvathi98
+parvathi98@LAPTOP-GIMPBL0O:~$ who
+parvathi98@LAPTOP-GIMPBL0O:~$ w
+ 17:38:36 up 15:07,  0 users,  load average: 0.33, 0.36, 0.42
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+parvathi98@LAPTOP-GIMPBL0O:~$ id
+uid=1000(parvathi98) gid=1000(parvathi98) groups=1000(parvathi98),4(adm),20(dialout),24(cdrom),25(floppy),27(sudo),29(audio),30(dip),44(video),46(plugdev),117(netdev),1005(docker)
+parvathi98@LAPTOP-GIMPBL0O:~$ passwd
+Changing password for parvathi98.
+Current password:
+New password:
+Retype new password:
+Password unchanged
+New password:
+Retype new password:
+You must choose a longer password
+New password:
+Retype new password:
+passwd: password updated successfully
+parvathi98@LAPTOP-GIMPBL0O:~$ passwd
+Changing password for parvathi98.
+Current password:
+New password:
+Retype new password:
+passwd: password updated successfully
+parvathi98@LAPTOP-GIMPBL0O:~$ man ls
+parvathi98@LAPTOP-GIMPBL0O:~$ cd /
+parvathi98@LAPTOP-GIMPBL0O:/$ ls
+bin   dev  home  lib    lib64   lost+found  mnt  proc  run   snap  sys  usr
+boot  etc  init  lib32  libx32  media       opt  root  sbin  srv   tmp  var
+parvathi98@LAPTOP-GIMPBL0O:/$ /etc/passwd
+-bash: /etc/passwd: Permission denied
+parvathi98@LAPTOP-GIMPBL0O:/$ cat etc/passwd
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+s
+
+parvathi98@LAPTOP-GIMPBL0O:/$ sudo adduser antona
+[sudo] password for parvathi98:
+Adding user `antona' ...
+Adding new group `antona' (1037) ...
+Adding new user `antona' (1034) with group `antona' ...
+Creating home directory `/home/antona' ...
+Copying files from `/etc/skel' ...
+New password:
+Retype new password:
+passwd: password updated successfully
+Changing the user information for antona
+Enter the new value, or press ENTER for the default
+        Full Name []: antona
+        Room Number []:
+        Work Phone []:
+        Home Phone []:
+        Other []:
+Is the information correct? [Y/n] y
+parvathi98@LAPTOP-GIMPBL0O:/$ pwd
+/
+parvathi98@LAPTOP-GIMPBL0O:/$ cat etc/passwd
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+
+
+orange:x:1029:1031:Mr Orange,,,:/home/orange:/bin/bash
+apple:x:1030:1033:Apple,,,:/home/apple:/bin/bash
+mango:x:1031:1034:Mango,,,:/home/mango:/bin/bash
+user1:x:1032:1035:user1,,,:/home/user1:/bin/bash
+user2:x:1033:1036:user2,,,:/home/user2:/bin/bash
+antona:x:1034:1037:antona,,,:/home/antona:/bin/bash
+parvathi98@LAPTOP-GIMPBL0O:/$ cat etc/group
+root:x:0:
+daemon:x:1:
+bin:x:2:
+
+utmp:x:43:
+video:x:44:parvathi98
+sasl:x:45:
+plugdev:x:46:parvathi98
+staff:x:50:
+games:x:60:
+
+og
+
+video:x:44:parvathi98
+sasl:x:45:
+plugdev:x:46:parvathi98
+staff:x:50:
+games:x:60:
+users:x:100:
+nogroup:x:65534:
+systemd-journal:x:101:
+systemd-network:x:102:
+systemd-resolve:x:103:
+systemd-timesync:x:104:
+crontab:x:105:
+messagebus:x:106:
+input:x:107:
+kvm:x:108:
+render:x:109:
+
+netdev:x:117:parvathi98
+lxd:x:118:
+parvathi98:x:1000:
+
+UstTraining:x:1004:
+docker:x:1005:parvathi98
+AlexUser1:x:1006:
+
+
+antona:x:1037:
+antonagrp:x:1038:
+parvathi98@LAPTOP-GIMPBL0O:/$ groupmod
+Usage: groupmod [options] GROUP
+
+Options:
+  -g, --gid GID                 change the group ID to GID
+  -h, --help                    display this help message and exit
+  -n, --new-name NEW_GROUP      change the name to NEW_GROUP
+  -o, --non-unique              allow to use a duplicate (non-unique) GID
+  -p, --password PASSWORD       change the password to this (encrypted)
+                                PASSWORD
+  -R, --root CHROOT_DIR         directory to chroot into
+  -P, --prefix PREFIX_DIR       prefix directory where are located the /etc/* files
+
+parvathi98@LAPTOP-GIMPBL0O:/$ ls
+bin   dev  home  lib    lib64   lost+found  mnt  proc  run   snap  sys  usr
+boot  etc  init  lib32  libx32  media       opt  root  sbin  srv   tmp  var
+parvathi98@LAPTOP-GIMPBL0O:/$ cd
+parvathi98@LAPTOP-GIMPBL0O:~$ ls
+ABCImpex       Thoughts     favfoods.sh       ifelse.sh         myfileswithvar.sh       parentfldr1           smil.yml
+AbcImpex       abcIMpex     fibonacci.sh      initialgalaxy     myfileswithvari.sh      parentfolder          sum.sh
+Alex           abcImpex     file              input.sh          myfilewithvar.sh        paru_orchestrate.yml  temp
+Amy            abcimpex     file.txt          loon              myfilewithvariables.sh  paru_playbook         tempy
+Dany           allperms     fileVariable.sh   mango.sh          myfilewithvars.sh       parurole              tempy.txt
+Employee.yml   args.sh      filevariables.sh  metafirms         myinfo.txt              prime.sh              thoughts.txt
+Hashmum        bashaliases  frndsinarray.sh   multicontnet.txt  newcreate               reading.sh            world
+InitialGalaxy  bootcamp     func_demo.sh      multiplesof5.sh   odd_or_even.sh          sayhi                 world.sh
+Play.yml       dore         hi                mycommands.sh     oddnumber.sh            scriptfilevar.sh      xyz
+Sam            example.sh   hiscript.sh       mycontnet.txt     oddnumbers.sh           shellscripting        zing
+parvathi98@LAPTOP-GIMPBL0O:~$ ls -il
+total 252
+97475 drwxr-xr-x  6 parvathi98 parvathi98 4096 Dec 17 13:44 ABCImpex
+40984 drwxr-xr-x  6 parvathi98 parvathi98 4096 Dec 17 12:25 AbcImpex
+
+
+
+parvathi98@LAPTOP-GIMPBL0O:~$ ls
+ABCImpex       Thoughts     favfoods.sh       ifelse.sh         myfileswithvar.sh       parentfldr1           smil.yml
+AbcImpex       abcIMpex     fibonacci.sh      initialgalaxy     myfileswithvari.sh      parentfolder          sum.sh
+Alex           abcImpex     file              input.sh          myfilewithvar.sh        paru_orchestrate.yml  temp
+Amy            abcimpex     file.txt          loon              myfilewithvariables.sh  paru_playbook         tempy
+Dany           allperms     fileVariable.sh   mango.sh          myfilewithvars.sh       parurole              tempy.txt
+Employee.yml   args.sh      filevariables.sh  metafirms         myinfo.txt              prime.sh              thoughts.txt
+Hashmum        bashaliases  frndsinarray.sh   multicontnet.txt  newcreate               reading.sh            world
+InitialGalaxy  bootcamp     func_demo.sh      multiplesof5.sh   odd_or_even.sh          sayhi                 world.sh
+Play.yml       dore         hi                mycommands.sh     oddnumber.sh            scriptfilevar.sh      xyz
+Sam            example.sh   hiscript.sh       mycontnet.txt     oddnumbers.sh           shellscripting        zing
+parvathi98@LAPTOP-GIMPBL0O:~$ file file.txt
+file.txt: ASCII text
+parvathi98@LAPTOP-GIMPBL0O:~$ ls -i
+97475 ABCImpex       97576 allperms          97350 hi                  97054 myfilewithvar.sh        97345 reading.sh
+40984 AbcImpex       97569 args.sh           97349 hiscript.sh         97301 myfilewithvariables.sh  97362 sayhi
+40750 Alex           97348 bashaliases       97571 ifelse.sh           97053 myfilewithvars.sh       97352 scriptfilevar.sh
+40776 Amy            97574 bootcamp          97514 initialgalaxy       40986 myinfo.txt              41006 shellscripting
+97202 Dany           97299 dore              97570 input.sh            40994 newcreate               97461 smil.yml
+97366 Employee.yml   97339 example.sh        97568 loon                97351 odd_or_even.sh          97364 sum.sh
+97640 Hashmum        97355 favfoods.sh       40985 mango.sh            97359 oddnumber.sh            40995 temp
+97477 InitialGalaxy  97458 fibonacci.sh      97577 metafirms           97358 oddnumbers.sh           40732 tempy
+97460 Play.yml       40991 file              41004 multicontnet.txt    40761 parentfldr1             40743 tempy.txt
+40770 Sam            97670 file.txt          97356 multiplesof5.sh     97668 parentfolder            40992 thoughts.txt
+40988 Thoughts       97353 fileVariable.sh   40998 mycommands.sh       41023 paru_orchestrate.yml    40747 world
+40739 abcIMpex       97357 filevariables.sh  40989 mycontnet.txt       40987 paru_playbook           97363 world.sh
+40741 abcImpex       97360 frndsinarray.sh   97344 myfileswithvar.sh   97368 parurole                40760 xyz
+97480 abcimpex       97361 func_demo.sh      97343 myfileswithvari.sh  97459 prime.sh                97341 zing
+parvathi98@LAPTOP-GIMPBL0O:~$ ls -a
+.              .profile                   Thoughts         filevariables.sh  myfileswithvar.sh       prime.sh
+..             .python_history            abcIMpex         frndsinarray.sh   myfileswithvari.sh      reading.sh
+.ansible       .python_history-00207.tmp  abcImpex         func_demo.sh      myfilewithvar.sh        sayhi
+.aws           .sudo_as_admin_successful  abcimpex         hi                myfilewithvariables.sh  scriptfilevar.sh
+.azure         .viminfo                   allperms         hiscript.sh       myfilewithvars.sh       shellscripting
+.bash_aliases  ABCImpex                   args.sh          ifelse.sh         myinfo.txt              smil.yml
+.bash_history  AbcImpex                   bashaliases      initialgalaxy     newcreate               sum.sh
+.bash_logout   Alex                       bootcamp         input.sh          odd_or_even.sh          temp
+.bashrc        Amy                        dore             loon              oddnumber.sh            tempy
+.config        Dany                       example.sh       mango.sh          oddnumbers.sh           tempy.txt
+.docker        Employee.yml               favfoods.sh      metafirms         parentfldr1             thoughts.txt
+.kube          Hashmum                    fibonacci.sh     multicontnet.txt  parentfolder            world
+.landscape     InitialGalaxy              file             multiplesof5.sh   paru_orchestrate.yml    world.sh
+.local         Play.yml                   file.txt         mycommands.sh     paru_playbook           xyz
+.motd_shown    Sam                        fileVariable.sh  mycontnet.txt     parurole                zing
+parvathi98@LAPTOP-GIMPBL0O:~$ ls -l
+total 252
+drwxr-xr-x  6 parvathi98 parvathi98 4096 Dec 17 13:44 ABCImpex
+drwxr-xr-x  6 parvathi98 parvathi98 4096 Dec 17 12:25 AbcImpex
+drwxr-xr-x  2 parvathi98 parvathi98 4096 Dec 17 13:42 Alex
+
+parvathi98@LAPTOP-GIMPBL0O:~$ cd loon
+parvathi98@LAPTOP-GIMPBL0O:~/loon$ cd sony
+parvathi98@LAPTOP-GIMPBL0O:~/loon/sony$ ls
+parvathi98@LAPTOP-GIMPBL0O:~/loon/sony$ cd ..
+parvathi98@LAPTOP-GIMPBL0O:~/loon$ ls
+clear.txt  file.txt  hashmum.txt  mix.txt  mytext.txt  sony  text.txt
+parvathi98@LAPTOP-GIMPBL0O:~/loon$ chmod o-w mix.txt
+parvathi98@LAPTOP-GIMPBL0O:~/loon$ ls -lh mix.txt
+-rw-r--r-- 1 parvathi98 parvathi98 1.7K Jan  7 17:20 mix.txt
+parvathi98@LAPTOP-GIMPBL0O:~/loon$ chmod o-x mix.txt
+parvathi98@LAPTOP-GIMPBL0O:~/loon$ ls -lh mix.txt
+-rw-r--r-- 1 parvathi98 parvathi98 1.7K Jan  7 17:20 mix.txt
+parvathi98@LAPTOP-GIMPBL0O:~/loon$ ls -alh | grep sony
+drwxr-xr-x  2 parvathi98 parvathi98 4.0K Jan  7 17:37 sony
+parvathi98@LAPTOP-GIMPBL0O:~/loon$ nano editfiles
+parvathi98@LAPTOP-GIMPBL0O:~/loon$ chmod 774 editfiles
+parvathi98@LAPTOP-GIMPBL0O:~/loon$ ls -lh editfiles
+-rwxrwxr-- 1 parvathi98 parvathi98 35 Jan  7 18:06 editfiles
+parvathi98@LAPTOP-GIMPBL0O:~/loon$ cat editfiles
+nano is an built editor in ubuntu.
+parvathi98@LAPTOP-GIMPBL0O:~/loon$ nano editfiles
+parvathi98@LAPTOP-GIMPBL0O:~/loon$ cat editfiles
+nano is an in-built editor in ubuntu.
+parvathi98@LAPTOP-GIMPBL0O:~/loon$ rm --editfiles
+rm: unrecognized option '--editfiles'
+Try 'rm --help' for more information.
+parvathi98@LAPTOP-GIMPBL0O:~/loon$ rm -- editfiles
+parvathi98@LAPTOP-GIMPBL0O:~/loon$ ls
+clear.txt  file.txt  hashmum.txt  mix.txt  mytext.txt  sony  text.txt
+parvathi98@LAPTOP-GIMPBL0O:~/loon$ find.-file.txt
+find.-file.txt: command not found
+parvathi98@LAPTOP-GIMPBL0O:~/loon$ find. -*.txt
+
+Command 'find.' not found, did you mean:
+
+  command 'findg' from deb ncl-ncarg (6.6.2-1build4)
+  command 'findv' from deb polylib-utils (5.22.5-4+dfsg)
+  command 'find' from deb findutils (4.7.0-1ubuntu1)
+
+Try: sudo apt install <deb name>
+
+parvathi98@LAPTOP-GIMPBL0O:~/loon$ find . -file.txt
+find: unknown predicate `-file.txt'
+parvathi98@LAPTOP-GIMPBL0O:~/loon$ find . - file.txt
+.
+./text.txt
+./file.txt
+./mix.txt
+./clear.txt
+./hashmum.txt
+./sony
+./mytext.txt
+find: ‘-’: No such file or directory
+file.txt
+parvathi98@LAPTOP-GIMPBL0O:~/loon$ find . -type d - file.txt
+find: paths must precede expression: `-'
+parvathi98@LAPTOP-GIMPBL0O:~/loon$ find . -type d -file.txt
+find: unknown predicate `-file.txt'
+parvathi98@LAPTOP-GIMPBL0O:~/loon$ find . - type d - file.txt
+.
+./text.txt
+./file.txt
+./mix.txt
+./clear.txt
+./hashmum.txt
+./sony
+./mytext.txt
+find: ‘-’: No such file or directory
+find: ‘type’: No such file or directory
+find: ‘d’: No such file or directory
+find: ‘-’: No such file or directory
+file.txt
+parvathi98@LAPTOP-GIMPBL0O:~/loon$ find . - file.txt - delete
+.
+./text.txt
+./file.txt
+./mix.txt
+./clear.txt
+./hashmum.txt
+./sony
+./mytext.txt
+find: ‘-’: No such file or directory
+file.txt
+find: ‘-’: No such file or directory
+find: ‘delete’: No such file or directory
+parvathi98@LAPTOP-GIMPBL0O:~/loon$ free
+              total        used        free      shared  buff/cache   available
+Mem:        3083892     1438088      115600      292932     1530204     1173540
+Swap:       1048576      141628      906948
+parvathi98@LAPTOP-GIMPBL0O:~/loon$ uptime
+ 18:31:18 up 16:00,  0 users,  load average: 1.95, 1.28, 0.83
+parvathi98@LAPTOP-GIMPBL0O:~/loon$ sudo apt install nmap
+[sudo] password for parvathi98:
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+
+parvathi98@LAPTOP-GIMPBL0O:~/loon$ sudo apt remove nmap
+[sudo] password for parvathi98:
+Reading package lists... Done
+Building dependency tree
+
+Do you want to continue? [Y/n] y
+(Reading database ... 75760 files and directories currently installed.)
+Removing nmap (7.80+dfsg1-2build1) ...
+Processing triggers for man-db (2.9.1-1) ...
+
+parvathi98@LAPTOP-GIMPBL0O:~/loon$ sudo apt update
+Hit:1 http://archive.ubuntu.com/ubuntu focal InRelease
+
+
+Fetched 6921 kB in 5s (1361 kB/s)
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+98 packages can be upgraded. Run 'apt list --upgradable' to see them.
+parvathi98@LAPTOP-GIMPBL0O:~/loon$ sudo apt upgrade
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+Calculating upgrade... Done
+
+0 added, 0 removed; done.
+Running hooks in /etc/ca-certificates/update.d...
+done.
+parvathi98@LAPTOP-GIMPBL0O:~/loon$ cd ..
+parvathi98@LAPTOP-GIMPBL0O:~$ python3
+Python 3.8.10 (default, Nov 26 2021, 20:14:08)
+[GCC 9.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> "hello!"
+'hello!'
+>>> 12+5
+17
+>>> name='Parvathi Ajith'
+>>> print("name is"+name)
+name isParvathi Ajith
+>>> print("My name is" +name)
+My name isParvathi Ajith
+>>> frommath import*
+  File "<stdin>", line 1
+    frommath import*
+             ^
+SyntaxError: invalid syntax
+>>> a=pi
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'pi' is not defined
+>>> from math import*
+>>> a =pi
+>>> print(a)
+3.141592653589793
+>>> print(sqrt(64))
+8.0
+>>> print(pow(6,4))
+1296.0
+>>> print(round(89.678))
+90
+>>> exit
+Use exit() or Ctrl-D (i.e. EOF) to exit
+>>> exit()
+parvathi98@LAPTOP-GIMPBL0O:~$ pmap
+
+Usage:
+ pmap [options] PID [PID ...]
+
+Options:
+ -x, --extended              show details
+ -X                          show even more details
+            WARNING: format changes according to /proc/PID/smaps
+ -XX                         show everything the kernel provides
+ -c, --read-rc               read the default rc
+ -C, --read-rc-from=<file>   read the rc from file
+ -n, --create-rc             create new default rc
+ -N, --create-rc-to=<file>   create new rc to file
+            NOTE: pid arguments are not allowed with -n, -N
+ -d, --device                show the device format
+ -q, --quiet                 do not display header and footer
+ -p, --show-path             show path in the mapping
+ -A, --range=<low>[,<high>]  limit results to the given range
+
+ -h, --help     display this help and exit
+ -V, --version  output version information and exit
+
+For more details see pmap(1).
+parvathi98@LAPTOP-GIMPBL0O:~$ top
+top - 19:32:47 up 17:01,  0 users,  load average: 1.47, 2.14, 6.96
+Tasks:  10 total,   1 running,   9 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.8 us,  2.4 sy,  0.0 ni, 92.1 id,  0.1 wa,  0.0 hi,  0.6 si,  0.0 st
+MiB Mem :   3011.6 total,    145.1 free,   1376.8 used,   1489.8 buff/cache
+MiB Swap:   1024.0 total,    778.5 free,    245.5 used.   1240.1 avail Mem
+
+  PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    1 root      20   0     900    184    120 S   0.0   0.0   0:00.14 init
+  117 root      20   0     900     64      0 S   0.0   0.0   0:00.00 init
+  118 root      20   0     900     64      0 S   0.0   0.0   0:00.00 init
+  119 root      20   0 1236332  19192   3464 S   0.0   0.6   0:50.53 docker-desktop-
+  127 root      20   0     900     64      0 S   0.0   0.0   0:00.00 init
+  128 parvath+  20   0  764008  16188    524 S   0.0   0.5   0:54.88 docker
+  157 root      20   0     900     64      0 S   0.0   0.0   0:00.00 init
+  158 root      20   0     900     64      0 S   0.0   0.0   0:00.89 init
+  159 parvath+  20   0   10172   5136   3348 S   0.0   0.2   0:08.11 bash
+12919 parvath+  20   0   10880   3720   3204 R   0.0   0.1   0:00.04 top
+
+parvathi98@LAPTOP-GIMPBL0O:~$ Htop
+
+Command 'Htop' not found, did you mean:
+
+  command 'itop' from deb itop (0.1-4build1)
+  command 'ptop' from deb fp-utils-3.0.4 (3.0.4+dfsg-23)
+  command 'ptop' from deb px (1.0.29-1)
+  command 'dtop' from deb diod (1.0.24-4)
+  command 'atop' from deb atop (2.4.0-3)
+  command 'qtop' from deb qtop (2.3.4-2build1)
+  command 'ctop' from deb ctop (1.0.0-2)
+  command 'utop' from deb utop (2.4.3-1build1)
+  command 'htop' from deb htop (2.2.0-2build1)
+  command 'top' from deb procps (2:3.3.16-1ubuntu2.3)
+
+Try: sudo apt install <deb name>
+
+parvathi98@LAPTOP-GIMPBL0O:~$ last
+
+wtmp begins Tue Nov 30 22:21:52 2021
+parvathi98@LAPTOP-GIMPBL0O:~$ ps
+  PID TTY          TIME CMD
+  159 pts/2    00:00:08 bash
+12929 pts/2    00:00:00 ps
+parvathi98@LAPTOP-GIMPBL0O:~$ info
+parvathi98@LAPTOP-GIMPBL0O:~$ env
+SHELL=/bin/bash
+WSL_DISTRO_NAME=Ubuntu-20.04
+NAME=LAPTOP-GIMPBL0O
+PWD=/home/parvathi98
+LOGNAME=parvathi98
+MOTD_SHOWN=update-motd
+HOME=/home/parvathi98
+
+Shell Scripting
+
+
+
+
+
