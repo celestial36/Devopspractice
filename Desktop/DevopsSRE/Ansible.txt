@@ -1,0 +1,137 @@
+parvathi98@LAPTOP-GIMPBL0O:~/parvathi_playbook$ cd ..
+parvathi98@LAPTOP-GIMPBL0O:~$ ansible-galaxy init --force --offline parurole
+- Role parurole was created successfully
+parvathi98@LAPTOP-GIMPBL0O:~$ tree parurole/
+parurole/
+├── README.md
+├── defaults
+│   └── main.yml
+├── files
+├── handlers
+│   └── main.yml
+├── meta
+│   └── main.yml
+├── start-tomcat
+│   ├── README.md
+│   ├── defaults
+│   │   └── main.yml
+│   ├── files
+│   ├── handlers
+│   │   └── main.yml
+│   ├── meta
+│   │   └── main.yml
+│   ├── tasks
+│   │   └── main.yml
+│   ├── templates
+│   ├── tests
+│   │   ├── inventory
+│   │   └── test.yml
+│   └── vars
+│       └── main.yml
+├── tasks
+│   └── main.yml
+├── templates
+├── tests
+│   ├── inventory
+│   └── test.yml
+└── vars
+    └── main.yml
+
+17 directories, 16 files
+parvathi98@LAPTOP-GIMPBL0O:~$ cd parvathi_playbook
+parvathi98@LAPTOP-GIMPBL0O:~/parvathi_playbook$ nano parvathi_orchestrate.yml
+parvathi98@LAPTOP-GIMPBL0O:~/parvathi_playbook$ ansible-galaxy init --force --offline install-tomcat
+- Role install-tomcat was created successfully
+parvathi98@LAPTOP-GIMPBL0O:~/parvathi_playbook$ cd install-tomcat
+parvathi98@LAPTOP-GIMPBL0O:~/parvathi_playbook/install-tomcat$ ls
+README.md  defaults  files  handlers  meta  tasks  templates  tests  vars
+parvathi98@LAPTOP-GIMPBL0O:~/parvathi_playbook/install-tomcat$ cd ..
+parvathi98@LAPTOP-GIMPBL0O:~/parvathi_playbook$ ansible-galaxy init --force --offline start-tomcat
+- Role start-tomcat was created successfully
+parvathi98@LAPTOP-GIMPBL0O:~/parvathi_playbook$ cd install-tomcat
+parvathi98@LAPTOP-GIMPBL0O:~/parvathi_playbook/install-tomcat$ cd ..
+parvathi98@LAPTOP-GIMPBL0O:~/parvathi_playbook$ tree install-tomcat/
+install-tomcat/
+├── README.md
+├── defaults
+│   └── main.yml
+├── files
+├── handlers
+│   └── main.yml
+├── meta
+│   └── main.yml
+├── tasks
+│   └── main.yml
+├── templates
+├── tests
+│   ├── inventory
+│   └── test.yml
+└── vars
+    └── main.yml
+
+8 directories, 8 files
+parvathi98@LAPTOP-GIMPBL0O:~/parvathi_playbook$ cd install-tomcat
+parvathi98@LAPTOP-GIMPBL0O:~/parvathi_playbook/install-tomcat$ cd tasks
+parvathi98@LAPTOP-GIMPBL0O:~/parvathi_playbook/install-tomcat/tasks$ nano main.yaml
+parvathi98@LAPTOP-GIMPBL0O:~/parvathi_playbook/install-tomcat/tasks$ cd ..
+parvathi98@LAPTOP-GIMPBL0O:~/parvathi_playbook/install-tomcat$ cd ..
+parvathi98@LAPTOP-GIMPBL0O:~/parvathi_playbook$ cd start-tomcat
+parvathi98@LAPTOP-GIMPBL0O:~/parvathi_playbook/start-tomcat$ cd tasks
+parvathi98@LAPTOP-GIMPBL0O:~/parvathi_playbook/start-tomcat/tasks$ nano mail.yaml
+parvathi98@LAPTOP-GIMPBL0O:~/parvathi_playbook/start-tomcat/tasks$ cd ..
+parvathi98@LAPTOP-GIMPBL0O:~/parvathi_playbook/start-tomcat$ cd ..
+parvathi98@LAPTOP-GIMPBL0O:~/parvathi_playbook$ cd install-tomcat
+parvathi98@LAPTOP-GIMPBL0O:~/parvathi_playbook/install-tomcat$ cd..
+cd..: command not found
+parvathi98@LAPTOP-GIMPBL0O:~/parvathi_playbook/install-tomcat$ cd ..
+parvathi98@LAPTOP-GIMPBL0O:~/parvathi_playbook$ cd ..
+parvathi98@LAPTOP-GIMPBL0O:~$ cd parvathi_playbook
+parvathi98@LAPTOP-GIMPBL0O:~/parvathi_playbook$ cat parvathi_orchestrate.yaml
+cat: parvathi_orchestrate.yaml: No such file or directory
+parvathi98@LAPTOP-GIMPBL0O:~/parvathi_playbook$ cat parvathi_orchestrate.yml
+---
+- hosts: tomcat-node
+roles:
+  - {role: install-tomcat}
+  - {role: start-tomcat}
+
+parvathi98@LAPTOP-GIMPBL0O:~/parvathi_playbook$ cd install-tomcat
+parvathi98@LAPTOP-GIMPBL0O:~/parvathi_playbook/install-tomcat$ cat main.yaml
+cat: main.yaml: No such file or directory
+parvathi98@LAPTOP-GIMPBL0O:~/parvathi_playbook/install-tomcat$ cd tasks
+parvathi98@LAPTOP-GIMPBL0O:~/parvathi_playbook/install-tomcat/tasks$ cat main.yaml
+#install paru artifacts
+-
+  block:
+    -name: Intsall tomcat art1facts
+     action: >
+      yum name = "demo-tomcat-1"state = present
+     register: output
+  always:
+    -debug:
+     msg:
+      -"Install tomcat artifacts task ended with message: {{Output}}"
+      -"Instaled tomcat artifacts- {{Output.changed}}"
+
+parvathi98@LAPTOP-GIMPBL0O:~/parvathi_playbook/install-tomcat/tasks$ cd ..
+parvathi98@LAPTOP-GIMPBL0O:~/parvathi_playbook/install-tomcat$ cd ..
+parvathi98@LAPTOP-GIMPBL0O:~/parvathi_playbook$ cd start-tomcat
+parvathi98@LAPTOP-GIMPBL0O:~/parvathi_playbook/start-tomcat$ cd tasks
+parvathi98@LAPTOP-GIMPBL0O:~/parvathi_playbook/start-tomcat/tasks$ cat main.yaml
+cat: main.yaml: No such file or directory
+parvathi98@LAPTOP-GIMPBL0O:~/parvathi_playbook/start-tomcat/tasks$ cat mail.yaml
+#Start tomcat
+-
+  block:
+    -name: Start tomcat
+    command: <path of tomcat>/bin/startup.sh
+    register: output
+    become: true
+
+  always:
+    -debug:
+      msg:
+       -"Start tomcat task ended with message: {{output}}"
+       -"Tomcat started - {{output.changed}}"
+
+parvathi98@LAPTOP-GIMPBL0O:~/parvathi_playbook/start-tomcat/tasks$

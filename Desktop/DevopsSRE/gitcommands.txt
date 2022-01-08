@@ -1,0 +1,104 @@
+PARVATHI AJITH@LAPTOP-GIMPBL0O MINGW64 ~ (master)
+$ git config --global user.name "Parvathi"
+
+PARVATHI AJITH@LAPTOP-GIMPBL0O MINGW64 ~ (master)
+$ git config --global user.email "parvathiajith97@gmail.com"
+
+PARVATHI AJITH@LAPTOP-GIMPBL0O MINGW64 ~ (master)
+$ git config --global user.email
+parvathiajith97@gmail.com
+
+PARVATHI AJITH@LAPTOP-GIMPBL0O MINGW64 ~ (master)
+$ git config --global user.name
+Parvathi
+
+PARVATHI AJITH@LAPTOP-GIMPBL0O MINGW64 ~ (master)
+$ git clone https://github.com/libgit2/libgit2
+Cloning into 'libgit2'...
+remote: Enumerating objects: 114299, done.
+remote: Counting objects: 100% (114299/114299), done.
+remote: Compressing objects: 100% (31600/31600), done.
+remote: Total 114299 (delta 80825), reused 114196 (delta 80724), pack-reused 0
+Receiving objects: 100% (114299/114299), 57.46 MiB | 767.00 KiB/s, done.
+Resolving deltas: 100% (80825/80825), done.
+Updating files: 100% (11429/11429), done.
+
+PARVATHI AJITH@LAPTOP-GIMPBL0O MINGW64 ~ (master)
+$ git status
+
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Desktop/DevopsSRE/Ansible.txt
+        deleted:    Desktop/Practicegitproject/sampleforgit.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        -1.14-windows.xml
+        .bash_history
+        .docker/
+        .gitconfig
+     
+        create frnds list.py
+        getting-started/
+        libgit2/
+        ntuser.dat.LOG1
+        ntuser.dat.LOG2
+        ntuser.ini
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+PARVATHI AJITH@LAPTOP-GIMPBL0O MINGW64 ~ (master)
+$ git status -s                       (status in asimplified form)
+warning: could not open directory 'Application Data/': Permission denied
+
+?? getting-started/
+?? libgit2/
+?? ntuser.dat.LOG1
+?? ntuser.dat.LOG2
+?? ntuser.ini
+
+PARVATHI AJITH@LAPTOP-GIMPBL0O MINGW64 ~ (master)
+$ git commit --amend           (to add commit titles)
+
+[master 1255f47] Devops training
+ Date: Sat Jan 8 12:09:00 2022 +0530
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Desktop/DevopsSRE/Dockerclassroom.docx
+ create mode 100644 Desktop/DevopsSRE/Dockerworkingwithasampleapplication.docx
+
+PARVATHI AJITH@LAPTOP-GIMPBL0O MINGW64 ~ (master)
+$ git remote              (to see which remote servers we have configured)
+
+PARVATHI AJITH@LAPTOP-GIMPBL0O MINGW64 ~ (master)
+$ git remote -v           (shows the URLs that git has stored for the shortname to be used when reading 
+and writing to that remote)
+
+PARVATHI AJITH@LAPTOP-GIMPBL0O MINGW64 ~ (master)
+$ git branch
+  carzy
+* master
+
+
+PARVATHI AJITH@LAPTOP-GIMPBL0O MINGW64 ~ (master)
+$ git switch crazy
+Switched to branch 'crazy'
+M       Desktop/DevopsSRE/Ansible.txt
+D       Desktop/Practicegitproject/sampleforgit.txt
+
+PARVATHI AJITH@LAPTOP-GIMPBL0O MINGW64 ~ (crazy)
+$ git switch crazy
+Already on 'crazy'
+M       Desktop/DevopsSRE/Ansible.txt
+D       Desktop/Practicegitproject/sampleforgit.txt
+
+PARVATHI AJITH@LAPTOP-GIMPBL0O MINGW64 ~ (crazy)
+$ git switch master
+Switched to branch 'master'
+M       Desktop/DevopsSRE/Ansible.txt
+D       Desktop/Practicegitproject/sampleforgit.txt
+
+PARVATHI AJITH@LAPTOP-GIMPBL0O MINGW64 ~ (master)
+$ git merge crazy
+Already up to date.
