@@ -26,8 +26,8 @@ parvathi98@LAPTOP-GIMPBL0O:~$ pwd
 parvathi98@LAPTOP-GIMPBL0O:~$ mkdir > file.txt
 mkdir: missing operand
 Try 'mkdir --help' for more information.
-parvathi98@LAPTOP-GIMPBL0O:~$ ls > file.txt           (capturing output of a command to a file)
-parvathi98@LAPTOP-GIMPBL0O:~$ cat file.txt            (Displaying the file contents)  
+parvathi98@LAPTOP-GIMPBL0O:~$ ls > file.txt      (capturing output of a command to a file)
+parvathi98@LAPTOP-GIMPBL0O:~$ cat file.txt       (Displaying the file contents)  
 ABCImpex
 AbcImpex
 Alex
@@ -39,7 +39,7 @@ InitialGalaxy
 Play.yml
 Sam
 parvathi98@LAPTOP-GIMPBL0O:~$ cd loon
-parvathi98@LAPTOP-GIMPBL0O:~/loon$ touch clear.txt      (creating a file using touch command)
+parvathi98@LAPTOP-GIMPBL0O:~/loon$ touch clear.txt    (creating a file using touch command)
 parvathi98@LAPTOP-GIMPBL0O:~/loon$ ls > file.txt
 parvathi98@LAPTOP-GIMPBL0O:~/loon$ cat file.txt
 clear.txt
@@ -149,7 +149,7 @@ bin:x:2:2:bin:/bin:/usr/sbin/nologin
 sys:x:3:3:sys:/dev:/usr/sbin/nologin
 s
 
-parvathi98@LAPTOP-GIMPBL0O:/$ sudo adduser antona             (Adding a new using sudo adduser)
+parvathi98@LAPTOP-GIMPBL0O:/$ sudo adduser antona     (Adding a new using sudo adduser)
 [sudo] password for parvathi98:
 Adding user `antona' ...
 Adding new group `antona' (1037) ...
@@ -169,7 +169,7 @@ Enter the new value, or press ENTER for the default
 Is the information correct? [Y/n] y
 parvathi98@LAPTOP-GIMPBL0O:/$ pwd
 /
-parvathi98@LAPTOP-GIMPBL0O:/$ cat etc/passwd                 (To ckeck whether the user has been created or not)   
+parvathi98@LAPTOP-GIMPBL0O:/$ cat etc/passwd            (To ckeck whether the user has been created or not)   
 root:x:0:0:root:/root:/bin/bash
 daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
 bin:x:2:2:bin:/bin:/usr/sbin/nologin
@@ -223,7 +223,7 @@ AlexUser1:x:1006:
 
 antona:x:1037:
 antonagrp:x:1038:
-parvathi98@LAPTOP-GIMPBL0O:/$ groupmod                    (Used to modify or change the existing group on Linux system. It can be handled by a superuser or root user)
+parvathi98@LAPTOP-GIMPBL0O:/$ groupmod             (Used to modify or change the existing group on Linux system. It can be handled by a superuser or root user)
 Usage: groupmod [options] GROUP
 
 Options:
@@ -468,7 +468,7 @@ My name isParvathi Ajith
 >>> exit
 Use exit() or Ctrl-D (i.e. EOF) to exit
 >>> exit()
-parvathi98@LAPTOP-GIMPBL0O:~$ pmap
+parvathi98@LAPTOP-GIMPBL0O:~$ pmap         (Displays the memory of a map process)
 
 Usage:
  pmap [options] PID [PID ...]
@@ -492,7 +492,8 @@ Options:
  -V, --version  output version information and exit
 
 For more details see pmap(1).
-parvathi98@LAPTOP-GIMPBL0O:~$ top
+parvathi98@LAPTOP-GIMPBL0O:~$ top       (Provides real time view of the running system)
+
 top - 19:32:47 up 17:01,  0 users,  load average: 1.47, 2.14, 6.96
 Tasks:  10 total,   1 running,   9 sleeping,   0 stopped,   0 zombie
 %Cpu(s):  4.8 us,  2.4 sy,  0.0 ni, 92.1 id,  0.1 wa,  0.0 hi,  0.6 si,  0.0 st
@@ -511,7 +512,7 @@ MiB Swap:   1024.0 total,    778.5 free,    245.5 used.   1240.1 avail Mem
   159 parvath+  20   0   10172   5136   3348 S   0.0   0.2   0:08.11 bash
 12919 parvath+  20   0   10880   3720   3204 R   0.0   0.1   0:00.04 top
 
-parvathi98@LAPTOP-GIMPBL0O:~$ Htop     
+parvathi98@LAPTOP-GIMPBL0O:~$ Htop     (htop - the improved version of the top command)
 
 Command 'Htop' not found, did you mean:
 
@@ -528,7 +529,7 @@ Command 'Htop' not found, did you mean:
 
 Try: sudo apt install <deb name>
 
-parvathi98@LAPTOP-GIMPBL0O:~$ last
+parvathi98@LAPTOP-GIMPBL0O:~$ last              (displays information of the last logged in users)
 
 wtmp begins Tue Nov 30 22:21:52 2021
 parvathi98@LAPTOP-GIMPBL0O:~$ ps
@@ -545,9 +546,11 @@ LOGNAME=parvathi98
 MOTD_SHOWN=update-motd
 HOME=/home/parvathi98
 
+
 Shell Scripting
 
-1) parvathi98@LAPTOP-GIMPBL0O:~$ nano file.sh            (creating a file.sh shell file inside nano)
+
+1) parvathi98@LAPTOP-GIMPBL0O:~$ nano file.sh       (creating a file.sh shell file inside nano)
 
 nano
 
