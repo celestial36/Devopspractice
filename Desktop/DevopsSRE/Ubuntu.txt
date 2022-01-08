@@ -546,6 +546,143 @@ HOME=/home/parvathi98
 
 Shell Scripting
 
+1) parvathi98@LAPTOP-GIMPBL0O:~$ nano file.sh            (creating a file.sh shell file inside nano)
+
+nano
+
+#!/bin/bash
+
+echo "Welcome to shellscripting"
+ls
+echo "Shell scripting is used to execute commands after storing"
+echo "A shell script has executable linux commands"
+
+parvathi98@LAPTOP-GIMPBL0O:~$ ./file.sh
+Welcome to shellscripting
+ABCImpex       Thoughts     favfoods.sh       hiscript.sh       mycontnet.txt           oddnumbers.sh         shellfile       world
+AbcImpex       abcIMpex     fibonacci.sh      ifelse.sh         myfileswithvar.sh       parentfldr1           shellfile.sh    world.sh
+Alex           abcImpex     file              initialgalaxy     myfileswithvari.sh      parentfolder          shellscripting  xyz
+Amy            abcimpex     file.sh           input.sh          myfilewithvar.sh        paru_orchestrate.yml  smil.yml        zing
+Dany           allperms     file.txt          loon              myfilewithvariables.sh  paru_playbook         start-tomcat
+Employee.yml   args.sh      fileVariable.sh   mango.sh          myfilewithvars.sh       parurole              sum.sh
+Hashmum        bashaliases  filevariables.sh  metafirms         myinfo.txt              prime.sh              temp
+InitialGalaxy  bootcamp     frndsinarray.sh   multicontnet.txt  newcreate               reading.sh            tempy
+Play.yml       dore         func_demo.sh      multiplesof5.sh   odd_or_even.sh          sayhi                 tempy.txt
+Sam            example.sh   hi                mycommands.sh     oddnumber.sh            scriptfilevar.sh      thoughts.txt
+Shell scripting is used to execute commands after storing
+A shell script has executable linux commands
+
+
+2) parvathi98@LAPTOP-GIMPBL0O:~$ nano shellvar.sh
+
+nano
+
+#!/bin/bash
+
+echo "working with varibles in a script file"
+title="learning shell scripting"
+training="Devops training"
+idno="6789"
+echo "$title $training $idno"
+
+parvathi98@LAPTOP-GIMPBL0O:~$ chmod +x shellvar.sh
+parvathi98@LAPTOP-GIMPBL0O:~$ ./shellvar.sh
+working with varibles in a script file
+learning shell scripting Devops training 6789
+
+3) parvathi98@LAPTOP-GIMPBL0O:~$ nano .bash_aliases      (Aliases instructs the shell to replace one string with another string while executing the commands)
+
+nano
+
+  GNU nano 4.8                                                 .bash_aliases                                                           
+
+#!/bin/bash
+
+alias ll = 'ls -l'
+alias la = 'ls -a'
+alias ls = 'ls -h'
+
+
+parvathi98@LAPTOP-GIMPBL0O:~$ chmod +x .bash_aliases
+parvathi98@LAPTOP-GIMPBL0O:~$ ./.bash_aliases
+parvathi98@LAPTOP-GIMPBL0O:~$ ll
+total 356
+drwxr-xr-x 34 parvathi98 parvathi98  4096 Jan  8 08:46 ./
+drwxr-xr-x 17 root       root        4096 Jan  7 17:44 ../
+drwxr-xr-x  4 parvathi98 parvathi98  4096 Dec 15 17:30 .ansible/
+lrwxrwxrwx  1 parvathi98 parvathi98    32 Dec  3 12:45 .aws -> '/mnt/c/Users/PARVATHI AJITH/.aws'/
+lrwxrwxrwx  1 parvathi98 parvathi98    34 Dec  3 12:45 .azure -> '/mnt/c/Users/PARVATHI AJITH/.azure'/
+-rwxr-xr-x  1 parvathi98 parvathi98    70 Jan  8 08:46 .bash_aliases*
+-rw-------  1 parvathi98 parvathi98 23873 Jan  7 21:05 .bash_history
+-rw-r--r--  1 parvathi98 parvathi98   220 Nov 30 22:23 .bash_logout
+-rw-r--r--  1 parvathi98 parvathi98  3771 Nov 30 22:23 .bashrc
+parvathi98@LAPTOP-GIMPBL0O:~$ la
+.ansible       .python_history            Thoughts      file.txt          multiplesof5.sh         parentfolder          sum.sh
+.aws           .python_history-00207.tmp  abcIMpex      fileVariable.sh   mycommands.sh           paru_orchestrate.yml  temp
+.azure         .sudo_as_admin_successful  abcImpex      filevariables.sh  mycontnet.txt           paru_playbook         tempy
+.bash_aliases  .viminfo                   abcimpex      frndsinarray.sh   myfileswithvar.sh       parurole              tempy.txt
+.bash_history  ABCImpex                   allperms      func_demo.sh      myfileswithvari.sh      prime.sh              thoughts.txt
+.bash_logout
+
+4) parvathi98@LAPTOP-GIMPBL0O:~$ nano fruit.sh
+
+nano
+
+#!/bin/bash
+
+echo "demo of if-else"
+echo "enter a fruit name"
+read fruit
+if [ $fruit = mango ]
+        then echo "I like mangoes"
+        else echo "I also love $fruit"
+fi
+
+parvathi98@LAPTOP-GIMPBL0O:~$ chmod +x fruit.sh
+parvathi98@LAPTOP-GIMPBL0O:~$ ./fruit.sh
+demo of if-else
+enter a fruit name
+mango
+I like mangoes
+parvathi98@LAPTOP-GIMPBL0O:~$ ./fruit.sh
+demo of if-else
+enter a fruit name
+orange
+I also love orange
+
+5) parvathi98@LAPTOP-GIMPBL0O:~$ nano loop.sh
+
+nano
+
+echo "loop demo"
+for((n=1;n<6;n++))
+        do
+                echo "Enter a number"
+                read number
+                echo "$n number is $number"
+        done
+
+parvathi98@LAPTOP-GIMPBL0O:~$ chmod +x loop.sh
+parvathi98@LAPTOP-GIMPBL0O:~$ ./loop.sh
+loop demo
+Enter a number
+70
+1 number is 70
+Enter a number
+60
+2 number is 60
+Enter a number
+7
+3 number is 7
+Enter a number
+3
+4 number is 3
+Enter a number
+78
+5 number is 78
+
+
+
 
 
 
