@@ -11,10 +11,10 @@ Hashmum        bashaliases  func_demo.sh      mycommands.sh       oddnumber.sh  
 InitialGalaxy  bootcamp     hi                mycontnet.txt       oddnumbers.sh           smil.yml
 Play.yml       dore         hiscript.sh       myfileswithvar.sh   parentfldr1             sum.sh
 Sam            example.sh   ifelse.sh         myfileswithvari.sh  paru_orchestrate.yml    temp
-parvathi98@LAPTOP-GIMPBL0O:~$ mkdir loon     (making directory)
+parvathi98@LAPTOP-GIMPBL0O:~$ mkdir loon        (making directory)
 parvathi98@LAPTOP-GIMPBL0O:~$ cd loon           (Changing to that directory)
 parvathi98@LAPTOP-GIMPBL0O:~/loon$ cd ..
-parvathi98@LAPTOP-GIMPBL0O:~$ cd ../..             (moving back to the root directory)
+parvathi98@LAPTOP-GIMPBL0O:~$ cd ../..          (moving back to the root directory)
 parvathi98@LAPTOP-GIMPBL0O:/$ cd
 parvathi98@LAPTOP-GIMPBL0O:~$ mkdir -p parentfolder/childfolder         (creating parent and child folders)
 parvathi98@LAPTOP-GIMPBL0O:~$ cd parentfolder
@@ -44,22 +44,24 @@ parvathi98@LAPTOP-GIMPBL0O:~/loon$ ls > file.txt
 parvathi98@LAPTOP-GIMPBL0O:~/loon$ cat file.txt
 clear.txt
 file.txt
-parvathi98@LAPTOP-GIMPBL0O:~/loon$ echo "We are learning some of the important linux commands" > text.txt
-parvathi98@LAPTOP-GIMPBL0O:~/loon$ cat text.txt
+parvathi98@LAPTOP-GIMPBL0O:~/loon$ echo "We are learning some of the important linux commands" > text.txt      (Adding text to a file using echo command)
+parvathi98@LAPTOP-GIMPBL0O:~/loon$ cat text.txt                                                                (Displaying the contents of file text.txt using cat command)
 We are learning some of the important linux commands
 parvathi98@LAPTOP-GIMPBL0O:~/loon$ cat .txt*
 cat: '.txt*': No such file or directory
 parvathi98@LAPTOP-GIMPBL0O:~/loon$ echo "It's so interesting" > mytext.txt
-parvathi98@LAPTOP-GIMPBL0O:~/loon$ cat text.txt mytext.txt
+parvathi98@LAPTOP-GIMPBL0O:~/loon$ cat text.txt mytext.txt                   (Displaying two file contents together)
 We are learning some of the important linux commands
 It's so interesting
-parvathi98@LAPTOP-GIMPBL0O:~/loon$ cat text* > mix.txt
+parvathi98@LAPTOP-GIMPBL0O:~/loon$ cat text* > mix.txt                       (transfering one file content to a new file) 
 parvathi98@LAPTOP-GIMPBL0O:~/loon$ cat mix.txt
 We are learning some of the important linux commands
-parvathi98@LAPTOP-GIMPBL0O:~/loon$ echo "After those lines about linex we are appening this line to it using echo " " >> filename" >> mix.txt
+parvathi98@LAPTOP-GIMPBL0O:~/loon$ echo "After those lines about linex we are appening this line to it using echo " " >> filename" >> mix.txt  (appending text to an existing file)
 parvathi98@LAPTOP-GIMPBL0O:~/loon$ cat mix.txt
 We are learning some of the important linux commands
 After those lines about linex we are appening this line to it using echo   >> filename
+
+(Repeating the command and creating a bigger page to navigate through it using less command)
 
 parvathi98@LAPTOP-GIMPBL0O:~/loon$ echo "After those lines about linex we are appening this line to it using echo " " >> filename" >> mix.txt
 parvathi98@LAPTOP-GIMPBL0O:~/loon$ echo "After those lines about linex we are appening this line to it using echo " " >> filename" >> mix.txt
@@ -69,16 +71,16 @@ parvathi98@LAPTOP-GIMPBL0O:~/loon$ echo "After those lines about linex we are ap
 parvathi98@LAPTOP-GIMPBL0O:~/loon$ less mix.txt                  (navigating through a page using less command)
 parvathi98@LAPTOP-GIMPBL0O:~/loon$ ls
 clear.txt  file.txt  mix.txt  mytext.txt  text.txt
-parvathi98@LAPTOP-GIMPBL0O:~/loon$ mkdir sony
+parvathi98@LAPTOP-GIMPBL0O:~/loon$ mkdir sony                    (Creating a directory)
 parvathi98@LAPTOP-GIMPBL0O:~/loon$ cd sony
-parvathi98@LAPTOP-GIMPBL0O:~/loon/sony$ touch hashmum.txt
+parvathi98@LAPTOP-GIMPBL0O:~/loon/sony$ touch hashmum.txt        (Creating a file)
 parvathi98@LAPTOP-GIMPBL0O:~/loon/sony$ ls
 hashmum.txt
-parvathi98@LAPTOP-GIMPBL0O:~/loon/sony$ cd ..
+parvathi98@LAPTOP-GIMPBL0O:~/loon/sony$ cd ..                    (Moving a step back)
 parvathi98@LAPTOP-GIMPBL0O:~/loon$ pwd
 /home/parvathi98/loon
 parvathi98@LAPTOP-GIMPBL0O:~/loon$ cd sony
-parvathi98@LAPTOP-GIMPBL0O:~/loon/sony$ mv hashmum.txt loon
+parvathi98@LAPTOP-GIMPBL0O:~/loon/sony$ mv hashmum.txt loon      (Renaming a file)
 parvathi98@LAPTOP-GIMPBL0O:~/loon/sony$ ls
 loon
  mv loon hashmum.txt
@@ -106,16 +108,16 @@ parvathi98@LAPTOP-GIMPBL0O:~/loon/sony$ ls
 hashmum.txt
 parvathi98@LAPTOP-GIMPBL0O:~/loon/sony$ mv hashmum.txt loon ..
 mv: cannot stat 'loon': No such file or directory
-parvathi98@LAPTOP-GIMPBL0O:~/loon/sony$ cd ../..
-parvathi98@LAPTOP-GIMPBL0O:~$ whoami
+parvathi98@LAPTOP-GIMPBL0O:~/loon/sony$ cd ../..               (moving back to the root directory)
+parvathi98@LAPTOP-GIMPBL0O:~$ whoami                           (to get the username)
 parvathi98
-parvathi98@LAPTOP-GIMPBL0O:~$ who
-parvathi98@LAPTOP-GIMPBL0O:~$ w
+parvathi98@LAPTOP-GIMPBL0O:~$ who                              (to check who has logged in)
+parvathi98@LAPTOP-GIMPBL0O:~$ w                                (to check who is here and what are they doing)
  17:38:36 up 15:07,  0 users,  load average: 0.33, 0.36, 0.42
 USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
-parvathi98@LAPTOP-GIMPBL0O:~$ id
+parvathi98@LAPTOP-GIMPBL0O:~$ id                               (To get the user id group id etc)
 uid=1000(parvathi98) gid=1000(parvathi98) groups=1000(parvathi98),4(adm),20(dialout),24(cdrom),25(floppy),27(sudo),29(audio),30(dip),44(video),46(plugdev),117(netdev),1005(docker)
-parvathi98@LAPTOP-GIMPBL0O:~$ passwd
+parvathi98@LAPTOP-GIMPBL0O:~$ passwd                           (Command to change the password)
 Changing password for parvathi98.
 Current password:
 New password:
@@ -127,27 +129,27 @@ You must choose a longer password
 New password:
 Retype new password:
 passwd: password updated successfully
-parvathi98@LAPTOP-GIMPBL0O:~$ passwd
+parvathi98@LAPTOP-GIMPBL0O:~$ passwd                  (changed the password back)
 Changing password for parvathi98.
 Current password:
 New password:
 Retype new password:
 passwd: password updated successfully
-parvathi98@LAPTOP-GIMPBL0O:~$ man ls
-parvathi98@LAPTOP-GIMPBL0O:~$ cd /
+parvathi98@LAPTOP-GIMPBL0O:~$ man ls                  (The command to get the manual of any linux command)
+parvathi98@LAPTOP-GIMPBL0O:~$ cd /                    (changing to the root)
 parvathi98@LAPTOP-GIMPBL0O:/$ ls
 bin   dev  home  lib    lib64   lost+found  mnt  proc  run   snap  sys  usr
 boot  etc  init  lib32  libx32  media       opt  root  sbin  srv   tmp  var
 parvathi98@LAPTOP-GIMPBL0O:/$ /etc/passwd
 -bash: /etc/passwd: Permission denied
-parvathi98@LAPTOP-GIMPBL0O:/$ cat etc/passwd
+parvathi98@LAPTOP-GIMPBL0O:/$ cat etc/passwd          (Managing users)
 root:x:0:0:root:/root:/bin/bash
 daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
 bin:x:2:2:bin:/bin:/usr/sbin/nologin
 sys:x:3:3:sys:/dev:/usr/sbin/nologin
 s
 
-parvathi98@LAPTOP-GIMPBL0O:/$ sudo adduser antona
+parvathi98@LAPTOP-GIMPBL0O:/$ sudo adduser antona             (Adding a new using sudo adduser)
 [sudo] password for parvathi98:
 Adding user `antona' ...
 Adding new group `antona' (1037) ...
@@ -167,7 +169,7 @@ Enter the new value, or press ENTER for the default
 Is the information correct? [Y/n] y
 parvathi98@LAPTOP-GIMPBL0O:/$ pwd
 /
-parvathi98@LAPTOP-GIMPBL0O:/$ cat etc/passwd
+parvathi98@LAPTOP-GIMPBL0O:/$ cat etc/passwd                 (To ckeck whether the user has been created or not)   
 root:x:0:0:root:/root:/bin/bash
 daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
 bin:x:2:2:bin:/bin:/usr/sbin/nologin
@@ -179,7 +181,7 @@ mango:x:1031:1034:Mango,,,:/home/mango:/bin/bash
 user1:x:1032:1035:user1,,,:/home/user1:/bin/bash
 user2:x:1033:1036:user2,,,:/home/user2:/bin/bash
 antona:x:1034:1037:antona,,,:/home/antona:/bin/bash
-parvathi98@LAPTOP-GIMPBL0O:/$ cat etc/group
+parvathi98@LAPTOP-GIMPBL0O:/$ cat etc/group             (Managing groups)
 root:x:0:
 daemon:x:1:
 bin:x:2:
@@ -221,7 +223,7 @@ AlexUser1:x:1006:
 
 antona:x:1037:
 antonagrp:x:1038:
-parvathi98@LAPTOP-GIMPBL0O:/$ groupmod
+parvathi98@LAPTOP-GIMPBL0O:/$ groupmod                    (Used to modify or change the existing group on Linux system. It can be handled by a superuser or root user)
 Usage: groupmod [options] GROUP
 
 Options:
@@ -249,7 +251,8 @@ Hashmum        bashaliases  frndsinarray.sh   multicontnet.txt  newcreate       
 InitialGalaxy  bootcamp     func_demo.sh      multiplesof5.sh   odd_or_even.sh          sayhi                 world.sh
 Play.yml       dore         hi                mycommands.sh     oddnumber.sh            scriptfilevar.sh      xyz
 Sam            example.sh   hiscript.sh       mycontnet.txt     oddnumbers.sh           shellscripting        zing
-parvathi98@LAPTOP-GIMPBL0O:~$ ls -il
+
+parvathi98@LAPTOP-GIMPBL0O:~$ ls -il                 (Lists out indexes and metadata of files)
 total 252
 97475 drwxr-xr-x  6 parvathi98 parvathi98 4096 Dec 17 13:44 ABCImpex
 40984 drwxr-xr-x  6 parvathi98 parvathi98 4096 Dec 17 12:25 AbcImpex
@@ -267,9 +270,12 @@ Hashmum        bashaliases  frndsinarray.sh   multicontnet.txt  newcreate       
 InitialGalaxy  bootcamp     func_demo.sh      multiplesof5.sh   odd_or_even.sh          sayhi                 world.sh
 Play.yml       dore         hi                mycommands.sh     oddnumber.sh            scriptfilevar.sh      xyz
 Sam            example.sh   hiscript.sh       mycontnet.txt     oddnumbers.sh           shellscripting        zing
-parvathi98@LAPTOP-GIMPBL0O:~$ file file.txt
+
+parvathi98@LAPTOP-GIMPBL0O:~$ file file.txt      (To check what type of file is it)
 file.txt: ASCII text
-parvathi98@LAPTOP-GIMPBL0O:~$ ls -i
+
+parvathi98@LAPTOP-GIMPBL0O:~$ ls -i              (Lists out indexes and filenames)
+
 97475 ABCImpex       97576 allperms          97350 hi                  97054 myfilewithvar.sh        97345 reading.sh
 40984 AbcImpex       97569 args.sh           97349 hiscript.sh         97301 myfilewithvariables.sh  97362 sayhi
 40750 Alex           97348 bashaliases       97571 ifelse.sh           97053 myfilewithvars.sh       97352 scriptfilevar.sh
@@ -284,7 +290,9 @@ parvathi98@LAPTOP-GIMPBL0O:~$ ls -i
 40739 abcIMpex       97357 filevariables.sh  40989 mycontnet.txt       40987 paru_playbook           97363 world.sh
 40741 abcImpex       97360 frndsinarray.sh   97344 myfileswithvar.sh   97368 parurole                40760 xyz
 97480 abcimpex       97361 func_demo.sh      97343 myfileswithvari.sh  97459 prime.sh                97341 zing
-parvathi98@LAPTOP-GIMPBL0O:~$ ls -a
+
+parvathi98@LAPTOP-GIMPBL0O:~$ ls -a             (Displays hidden files)
+
 .              .profile                   Thoughts         filevariables.sh  myfileswithvar.sh       prime.sh
 ..             .python_history            abcIMpex         frndsinarray.sh   myfileswithvari.sh      reading.sh
 .ansible       .python_history-00207.tmp  abcImpex         func_demo.sh      myfilewithvar.sh        sayhi
@@ -300,7 +308,8 @@ parvathi98@LAPTOP-GIMPBL0O:~$ ls -a
 .landscape     InitialGalaxy              file             multiplesof5.sh   paru_orchestrate.yml    world.sh
 .local         Play.yml                   file.txt         mycommands.sh     paru_playbook           xyz
 .motd_shown    Sam                        fileVariable.sh  mycontnet.txt     parurole                zing
-parvathi98@LAPTOP-GIMPBL0O:~$ ls -l
+
+parvathi98@LAPTOP-GIMPBL0O:~$ ls -l         (for geting meta data of files)
 total 252
 drwxr-xr-x  6 parvathi98 parvathi98 4096 Dec 17 13:44 ABCImpex
 drwxr-xr-x  6 parvathi98 parvathi98 4096 Dec 17 12:25 AbcImpex
@@ -312,16 +321,23 @@ parvathi98@LAPTOP-GIMPBL0O:~/loon/sony$ ls
 parvathi98@LAPTOP-GIMPBL0O:~/loon/sony$ cd ..
 parvathi98@LAPTOP-GIMPBL0O:~/loon$ ls
 clear.txt  file.txt  hashmum.txt  mix.txt  mytext.txt  sony  text.txt
-parvathi98@LAPTOP-GIMPBL0O:~/loon$ chmod o-w mix.txt
+
+parvathi98@LAPTOP-GIMPBL0O:~/loon$ chmod o-w mix.txt    (Giving write permission to others)
+
+parvathi98@LAPTOP-GIMPBL0O:~/loon$ ls -lh mix.txt       (viewing the permissions granted)
+
+-rw-r--r-- 1 parvathi98 parvathi98 1.7K Jan  7 17:20 mix.txt
+
+parvathi98@LAPTOP-GIMPBL0O:~/loon$ chmod o-x mix.txt    (Granting execute permission to others)
+
 parvathi98@LAPTOP-GIMPBL0O:~/loon$ ls -lh mix.txt
 -rw-r--r-- 1 parvathi98 parvathi98 1.7K Jan  7 17:20 mix.txt
-parvathi98@LAPTOP-GIMPBL0O:~/loon$ chmod o-x mix.txt
-parvathi98@LAPTOP-GIMPBL0O:~/loon$ ls -lh mix.txt
--rw-r--r-- 1 parvathi98 parvathi98 1.7K Jan  7 17:20 mix.txt
-parvathi98@LAPTOP-GIMPBL0O:~/loon$ ls -alh | grep sony
+
+parvathi98@LAPTOP-GIMPBL0O:~/loon$ ls -alh | grep sony  (searching for the metadata of a specific file or directory)
 drwxr-xr-x  2 parvathi98 parvathi98 4.0K Jan  7 17:37 sony
-parvathi98@LAPTOP-GIMPBL0O:~/loon$ nano editfiles
-parvathi98@LAPTOP-GIMPBL0O:~/loon$ chmod 774 editfiles
+
+parvathi98@LAPTOP-GIMPBL0O:~/loon$ nano editfiles       (Creating and editing a file using built-in editor nano)
+parvathi98@LAPTOP-GIMPBL0O:~/loon$ chmod 774 editfiles  (Granting read write execute permissions in binary form)
 parvathi98@LAPTOP-GIMPBL0O:~/loon$ ls -lh editfiles
 -rwxrwxr-- 1 parvathi98 parvathi98 35 Jan  7 18:06 editfiles
 parvathi98@LAPTOP-GIMPBL0O:~/loon$ cat editfiles
@@ -329,27 +345,17 @@ nano is an built editor in ubuntu.
 parvathi98@LAPTOP-GIMPBL0O:~/loon$ nano editfiles
 parvathi98@LAPTOP-GIMPBL0O:~/loon$ cat editfiles
 nano is an in-built editor in ubuntu.
-parvathi98@LAPTOP-GIMPBL0O:~/loon$ rm --editfiles
+parvathi98@LAPTOP-GIMPBL0O:~/loon$ rm --editfiles     (removing the created file)
 rm: unrecognized option '--editfiles'
 Try 'rm --help' for more information.
 parvathi98@LAPTOP-GIMPBL0O:~/loon$ rm -- editfiles
-parvathi98@LAPTOP-GIMPBL0O:~/loon$ ls
+parvathi98@LAPTOP-GIMPBL0O:~/loon$ ls                 (listing out the files to ensure the deleted file is no longer present)
 clear.txt  file.txt  hashmum.txt  mix.txt  mytext.txt  sony  text.txt
-parvathi98@LAPTOP-GIMPBL0O:~/loon$ find.-file.txt
-find.-file.txt: command not found
-parvathi98@LAPTOP-GIMPBL0O:~/loon$ find. -*.txt
 
-Command 'find.' not found, did you mean:
-
-  command 'findg' from deb ncl-ncarg (6.6.2-1build4)
-  command 'findv' from deb polylib-utils (5.22.5-4+dfsg)
-  command 'find' from deb findutils (4.7.0-1ubuntu1)
-
-Try: sudo apt install <deb name>
 
 parvathi98@LAPTOP-GIMPBL0O:~/loon$ find . -file.txt
 find: unknown predicate `-file.txt'
-parvathi98@LAPTOP-GIMPBL0O:~/loon$ find . - file.txt
+parvathi98@LAPTOP-GIMPBL0O:~/loon$ find . - file.txt   (finds all files with .txt)
 .
 ./text.txt
 ./file.txt
@@ -391,11 +397,13 @@ find: ‘-’: No such file or directory
 file.txt
 find: ‘-’: No such file or directory
 find: ‘delete’: No such file or directory
-parvathi98@LAPTOP-GIMPBL0O:~/loon$ free
-              total        used        free      shared  buff/cache   available
+parvathi98@LAPTOP-GIMPBL0O:~/loon$ free        (Displays the amount of free and used memory in a system)
+             
+             total        used        free      shared  buff/cache   available
 Mem:        3083892     1438088      115600      292932     1530204     1173540
 Swap:       1048576      141628      906948
-parvathi98@LAPTOP-GIMPBL0O:~/loon$ uptime
+
+parvathi98@LAPTOP-GIMPBL0O:~/loon$ uptime      (To find out how long system has been running)
  18:31:18 up 16:00,  0 users,  load average: 1.95, 1.28, 0.83
 parvathi98@LAPTOP-GIMPBL0O:~/loon$ sudo apt install nmap
 [sudo] password for parvathi98:
@@ -445,15 +453,8 @@ Type "help", "copyright", "credits" or "license" for more information.
 name isParvathi Ajith
 >>> print("My name is" +name)
 My name isParvathi Ajith
->>> frommath import*
-  File "<stdin>", line 1
-    frommath import*
-             ^
-SyntaxError: invalid syntax
->>> a=pi
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-NameError: name 'pi' is not defined
+
+
 >>> from math import*
 >>> a =pi
 >>> print(a)
@@ -510,7 +511,7 @@ MiB Swap:   1024.0 total,    778.5 free,    245.5 used.   1240.1 avail Mem
   159 parvath+  20   0   10172   5136   3348 S   0.0   0.2   0:08.11 bash
 12919 parvath+  20   0   10880   3720   3204 R   0.0   0.1   0:00.04 top
 
-parvathi98@LAPTOP-GIMPBL0O:~$ Htop
+parvathi98@LAPTOP-GIMPBL0O:~$ Htop     
 
 Command 'Htop' not found, did you mean:
 
